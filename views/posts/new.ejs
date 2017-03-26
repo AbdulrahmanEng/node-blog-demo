@@ -1,0 +1,19 @@
+<%- include('../partials/header'); %>
+<h1>
+  <%= pageTitle %>
+</h1>
+<form action="/posts" method="post">
+  <div>
+    <label for="title">Title</label><br/>
+    <input type="text" name="title" />
+  </div>
+  <div>
+    <label for="body">Body</label><br/>
+    <input type="textarea" name="body" />
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
+  <a href="/posts">Back</a>
+<%- include('../partials/footer'); %>

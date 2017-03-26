@@ -1,0 +1,17 @@
+<%- include('../partials/header'); %>
+  <h1>
+    <%= pageTitle %>
+  </h1>
+  <ul>
+      <% for(var i=0;i<posts.length;i++) { %>
+          <h2>
+            <a href="/posts/<%= posts[i].id %>"><%= posts[i].title %></a>
+          </h2>
+          <p><%= posts[i].body %></p>
+      <% } %>
+  </ul>
+  <a href="/posts/new">New Post</a>
+</body>
+
+</html>
+<%- include('../partials/footer'); %>
